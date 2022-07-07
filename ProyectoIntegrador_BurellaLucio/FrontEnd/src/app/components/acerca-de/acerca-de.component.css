@@ -14,6 +14,7 @@ div{
         box-shadow: 3px 3px 3px grey;
         left: 3%;
         top: 600px;
+        
     }
 }
 @media(max-width: 575px){
