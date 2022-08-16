@@ -1,13 +1,43 @@
-<div class="row">
+<!-- <div class="row">
     <h1>Experiencia laboral</h1>
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
-        <ul>
+        <ul *ngFor="let experiencia of experiencias " >
             <li>
-                <h1>Trabajo 1</h1>-<h3>(years)</h3>
+                <h1>{{experiencia.titulo}}</h1>-<h3>{{experiencia.fecha}}</h3>
             </li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel aliquam ut unde, consequuntur ipsa, repudiandae nemo excepturi
-                , fugiat nam quo quidem reiciendis. Ea eum ullam ipsam similique dolores sequi.</p>
+            <p>{{experiencia.descripcion}}</p>
         </ul>
     </div>
-</div>
+</div> -->
+
+
+
+<div style="text-align:center;margin-bottom:solid 1px blue;" class="container">
+  <div class="row my-4">
+    <div class="col-8 titulo">
+      <h1>Experiencias</h1>
+    </div>
+    <div class="col-4 d-flex justify-content-end">
+      <button (click)="Nuevo()" class="btn agregar" style="margin-left: 10px;margin-right: 10px;"><i
+          class="far fa-plus-square" style="justify-content: center;"></i></button>
+    </div>
+  </div>
+
+  <div *ngFor="let experiencia of experiencias" class="col-xl-4 col-lg-6 col-md-8 col-sm-8 col-10">
+    <div class="card">
+      <div class="row d-flex justify-content-center">{{experiencia.titulo}}</div>
+      <div class="row d-flex justify-content-center">{{experiencia.fecha}}</div>
+      <div class="row d-flex justify-content-center">{{experiencia.descripcion}}</div>
+
+      <div class="row d-flex justify-content-center">
+        <div class="col">
+            <button (click)="Editar()" class="btn editar"><i
+                class="fas fa-edit"></i></button>
+            <button (click)="Delete()" class="btn borrar"><i class="fas fa-trash"></i></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- col-xl-4 col-lg-6 col-md-8 col-sm-8 col-10 -->

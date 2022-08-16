@@ -8,13 +8,10 @@
     <p id="nombre">{{persona.apellido}} {{persona.nombre}} </p>
     <p>Full Stack Developer Jr</p>
 </div>
-<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8" *ngFor="let persona of personas">
     <span>
         <h1>Acerca de mí</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum id corrupti praesentium vel exercitationem incidunt vitae, 
-        iusto sapiente debitis distinctio numquam similique? Totam voluptas iste sed similique 
-        repellendus iusto est.
-        </p>
+        <p>{{persona.sobre_mi}}</p>
     </span>
 </div>
 </div>

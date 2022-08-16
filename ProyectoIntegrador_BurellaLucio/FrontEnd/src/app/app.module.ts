@@ -14,7 +14,8 @@ import { HysComponent } from './components/hys/hys.component';
 import { ProyectoComponent } from './components/proyecto/proyecto.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
+import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AlifeFileToBase64Module
   ],
   providers: [],
   bootstrap: [AppComponent]

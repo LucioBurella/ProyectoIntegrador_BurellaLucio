@@ -7,3 +7,6 @@ div{
 h1,h3{
     display: inline;
 }
+.card{
+    border-color:black;
+}

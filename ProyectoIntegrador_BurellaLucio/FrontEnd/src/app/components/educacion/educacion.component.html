@@ -1,13 +1,15 @@
-<div class="row">
-    <h1>Educacion</h1>
-    <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-        <ul>
+<div class="container">
+    <div class="text-center">
+        <h1 class="m-3">Educacion</h1>
+    </div>
+    <div class="row">
+        <ul class="list-unstyled" *ngFor="let educacion of educaciones">
             <li>
-                <h1>Estudio 1</h1>-<h3>(years)</h3>
+                <div class="col-md-12">
+                    <h2>{{educacion.titulo}}</h2><span><h4>{{educacion.fecha}}</h4></span>
+                    <p class="text-muted">{{educacion.descripcion}}</p>
+                </div>
             </li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel aliquam ut unde, consequuntur ipsa, repudiandae nemo excepturi
-                , fugiat nam quo quidem reiciendis. Ea eum ullam ipsam similique dolores sequi.</p>
         </ul>
     </div>
 </div>

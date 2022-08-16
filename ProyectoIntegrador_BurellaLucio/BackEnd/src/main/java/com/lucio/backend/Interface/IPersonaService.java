@@ -11,6 +11,4 @@ public void savePersona(Persona persona);
 public void deletePersona(int id);
 public Persona findPersona(int id);
 
-
-
 }
